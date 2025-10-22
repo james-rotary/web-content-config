@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-content-api
+  namespace: web-content
+spec:
+  selector:
+    app: web-content-api
+  ports:
+    - name: http
+      port: 4000
+      targetPort: 4000
+  type: ClusterIP
