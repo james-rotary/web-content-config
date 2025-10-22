@@ -2,7 +2,7 @@ resources:
   - ../../base
 images:
   - name: web-content-api
-    newTag: dev
+    newTag: dev2
 patches:
   - target:
       kind: Deployment
